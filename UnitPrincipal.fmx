@@ -1,0 +1,712 @@
+object frmPrincipal: TfrmPrincipal
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 627
+  ClientWidth = 330
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnShow = FormShow
+  DesignerMasterStyle = 3
+  object rect_tb: TRectangle
+    Align = Top
+    Corners = [BottomLeft, BottomRight]
+    Fill.Color = claWhite
+    HitTest = False
+    Sides = [Bottom]
+    Size.Width = 330.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claGray
+    Stroke.Thickness = 0.200000002980232200
+    object Label1: TLabel
+      Align = Contents
+      StyledSettings = [Family]
+      Locked = True
+      Size.Width = 330.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 18.000000000000000000
+      TextSettings.Font.StyleExt = {00060000000000000004000000}
+      TextSettings.HorzAlign = Center
+      Text = 'Employer'
+      TabOrder = 1
+    end
+    object cir_img_menu: TCircle
+      Align = Left
+      Fill.Kind = None
+      Size.Width = 65.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      OnClick = cir_img_menuClick
+      object img_menu: TImage
+        MultiResBitmap.Height = 39
+        MultiResBitmap.Width = 39
+        MultiResBitmap.LoadSize = 2
+        MultiResBitmap = <
+          item
+            Width = 32
+            Height = 32
+            PNG = {
+              89504E470D0A1A0A0000000D4948445200000020000000200806000000737A7A
+              F4000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              00D0494441545847EDD6410AC2301005D03FB50B97BD4153BC8005455C7A03AF
+              E0CDBC8147D09D1B454F20E6065DAA248D6D998DA2524BC8A6F336CD24D040CB
+              7C0642F41EF1F345BA778A97DEE9395D79D9A0EC68B75496CAC671AE732A4607
+              B77411367CEE5F89D565426BAE10D59763102B188CEB0DE350342781507AAA3E
+              F703899ED199F750ED25B821E1D2ABF75F2084BF1C18A2A8DB98ABD6BCE680B5
+              58E829EDB86CC56F0ED0FFADEB3507A4C7451761E6811F19116C1EB077649FBA
+              24CC3C60CCD7778699073AC6B4107D003C01FDED721A5264D6FB000000004945
+              4E44AE426082}
+            FileName = 
+              'C:\Users\User\Desktop\iago\MenuLateralUI\image\iconfinder_burger' +
+              '-menu-2_6351903.png'
+          end>
+        Align = Left
+        Locked = True
+        HitTest = False
+        Margins.Left = 8.000000000000000000
+        Margins.Top = 8.000000000000000000
+        Margins.Right = 8.000000000000000000
+        Margins.Bottom = 8.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 8.000000000000000000
+        Size.Width = 57.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        object cir_anima: TCircle
+          Align = Center
+          Fill.Color = xFF3343BD
+          HitTest = False
+          Size.Width = 43.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          object AnimaHeigth: TFloatAnimation
+            Duration = 0.400000005960464500
+            OnProcess = AnimaHeigthProcess
+            PropertyName = 'Height'
+            StartValue = 0.000000000000000000
+            StopValue = 1500.000000000000000000
+          end
+          object AnimaWidth: TFloatAnimation
+            Duration = 0.400000005960464500
+            PropertyName = 'Width'
+            StartValue = 0.000000000000000000
+            StopValue = 1500.000000000000000000
+          end
+        end
+      end
+    end
+  end
+  object lay_menu: TLayout
+    Align = Contents
+    Size.Width = 330.000000000000000000
+    Size.Height = 627.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 0
+    object rect_icons: TRectangle
+      Align = Client
+      Fill.Color = xFF3343BD
+      Size.Width = 330.000000000000000000
+      Size.Height = 627.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = xFF3343BD
+      object lay_home: TLayout
+        Align = Top
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 20.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 45.000000000000000000
+        Size.Width = 300.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object Circle1: TCircle
+          Align = Left
+          Fill.Kind = None
+          Locked = True
+          HitTest = False
+          Size.Width = 41.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          object Image1: TImage
+            MultiResBitmap.Height = 39
+            MultiResBitmap.Width = 39
+            MultiResBitmap.LoadSize = 2
+            MultiResBitmap = <
+              item
+                Width = 32
+                Height = 32
+                PNG = {
+                  89504E470D0A1A0A0000000D4948445200000020000000200806000000737A7A
+                  F4000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                  0159494441545847ED95D14DC33014459F1DF3DF4E00F506F403896918A1ED04
+                  B41B7485AE03A86C10E804CD2F6A1CE317BF104A9CC886DA80D42345C9B31DDD
+                  6B3BF185EF22B7D59D7C38ECE5E3E1453E55736A0E86D13D08237E6F5E5D5249
+                  E8653EE52B2ABC0936E0166F684DE00A41A9D620C4A8EE52E52B6419F66FEA9A
+                  0832302CDE604DE0D64026AEA8D15296457E7331A6AAC6DB809F788336E3DC63
+                  F3293BD2F43210263ECC57039CEEBD9C52DCC5A081D8E248AF8114E288D3402A
+                  71A46320A53872642085B8D568F9F825D2CEBC3D316B03A997DD624D30233E33
+                  E26B6A4D4BA517CC7966A7C26403070D36AD7E030605575C2CEAA84C8D993D30
+                  B1EA8491DC6A4D8F51080EA3D8041B30EBB3510CC63893CF97699B601F0DF326
+                  780BD41B4C76B7CCF9CD5C3EEB51A6614FA5931F6F419F38B2BB66053D7AF3FF
+                  BE815373367036F0070D6048C4C2117A1D03D1D291D28F2A02E01D2AEC999601
+                  2DA3EB0000000049454E44AE426082}
+                FileName = 
+                  'C:\Users\User\Desktop\iago\MenuLateralUI\image\iconfinder_home_1' +
+                  '26572.png'
+              end>
+            Align = Client
+            Locked = True
+            HitTest = False
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Size.Width = 31.000000000000000000
+            Size.Height = 15.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+        object Label4: TLabel
+          Align = Client
+          StyledSettings = [Family]
+          Locked = True
+          Size.Width = 259.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.FontColor = claWhite
+          Text = 'Home'
+          TabOrder = 0
+        end
+      end
+      object lay_setting: TLayout
+        Align = Top
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 20.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 255.000000000000000000
+        Size.Width = 300.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object Circle2: TCircle
+          Align = Left
+          Fill.Kind = None
+          Locked = True
+          HitTest = False
+          Size.Width = 41.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          object Image2: TImage
+            MultiResBitmap.Height = 39
+            MultiResBitmap.Width = 39
+            MultiResBitmap.LoadSize = 2
+            MultiResBitmap = <
+              item
+                Width = 32
+                Height = 32
+                PNG = {
+                  89504E470D0A1A0A0000000D4948445200000020000000200806000000737A7A
+                  F4000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                  02DB494441545847D5975D76123114C76F92C1675C018515D06AF5F824EC4077
+                  202BA05D41ED0A6407D415C80EA88F2AB675037CACC0BE6A2789F77F9B99C2CC
+                  00333D1C7AFC9D03498649EEBDC9FD088A2AD2B8F607DAB9A152BA131E09DEBB
+                  91FBAB4F176FD43C3C2A850E6D6958F8A7AC70C0CFDEE9676E1886A5A9AC0004
+                  856E8E22C5B65159815DF3E40AAC38213B58DD58FF017D7BA74659876AFCF01D
+                  63681C8685584BDDC5B1BA0C43018ECBEBCAD165D74D159097E2784C263A088F
+                  E0D917ECD9E79820C2291E2EFF5E888DE7368EBA32070679DFA7D89E5014D5D3
+                  DFA3E87071A86E314C1568FEB4082DB17E27B020F2544F052FE1C90D6647E614
+                  7D5140ACF734437F5F2447254E88C4224FF788D6EE4C5A7C29E7369F6B11717C
+                  8BEC878F6C77451299A280D7D157B4A58013F1F64D5FD59ECF5E98F7F84C8F6B
+                  4DEBA8574511AFB5448A28E0347D2C3519C2E1E19930038B97EA82BDBB5B661D
+                  DEB54B4417FA2B79A0357127E46D7F6DA8B19553161446856CCC153080A2DEB2
+                  012B0A80C637DF3635BA0EC3077832B63A8C36D2FA7EF7BB28FCEC1F6A66935B
+                  2E152F5EAB1B72F6260C53BCD2BF42772BDEDC9FEF32D8F6AC7090530078759F
+                  A5768AF7B91D01390590940AEBBD736F43772BFC6E3B745394366DF84718A6AC
+                  28D0BA727D7317E7CF1FF099162D90A531E162B6C6898D8FBF88A32FF1908A33
+                  85A890240C0BCE123C661DD90149C5DB26017EC744F1B8052B3348F895110EF8
+                  1DBEBE492A961D5817361B612B389B49B428EB3A8F998FB0961DE0B0C985DD56
+                  D80ADC0FE58E585538C3CACB318A024EEB1EDA7DA2BCFE8C5614E0DBC9DC7B92
+                  DC9C83AB1EB62B8C76026E5A494A4FC3900BD2604590945B3AB7B5A829D54E51
+                  B39422FC8E54CB23A53087D7104B5378DDA410817C2D98C8E5B14E8646C9BD2D
+                  6163A109ACBB9472A449FCB3F0C17218E714D846EB8A6DDA002C0FDD52A447F0
+                  54FC7F0AA0AC866E0EB91F56A4B202C8194582A018FE9E87614988FE01B1FA82
+                  4AED7DD9E40000000049454E44AE426082}
+                FileName = 
+                  'C:\Users\User\Desktop\iago\MenuLateralUI\image\iconfinder_icons_' +
+                  'settings_1564529.png'
+              end>
+            Align = Client
+            Locked = True
+            HitTest = False
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Size.Width = 31.000000000000000000
+            Size.Height = 15.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+        object Label5: TLabel
+          Align = Client
+          StyledSettings = [Family]
+          Locked = True
+          Size.Width = 259.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.FontColor = claWhite
+          Text = 'Setting'
+          TabOrder = 0
+        end
+      end
+      object lay_notification: TLayout
+        Align = Top
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 20.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 220.000000000000000000
+        Size.Width = 300.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        object Circle3: TCircle
+          Align = Left
+          Fill.Kind = None
+          Locked = True
+          HitTest = False
+          Size.Width = 41.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          object Image3: TImage
+            MultiResBitmap.Height = 39
+            MultiResBitmap.Width = 39
+            MultiResBitmap.LoadSize = 2
+            MultiResBitmap = <
+              item
+                Width = 32
+                Height = 32
+                PNG = {
+                  89504E470D0A1A0A0000000D4948445200000020000000200806000000737A7A
+                  F4000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                  0191494441545847ED97CD55C24010807776E3DD0E903420F0B878D20EC40EB0
+                  03AD40A8403B081D281D78F33D7F900AF8A940CE929D71378ECF874BC22611F1
+                  90EFC2CCBCBCE4DBB0496640E4A0F64AFB4A5397808E01B121547060EB847A2C
+                  006640723869C32039D8136F81DA337514C69108827D2EAD47C7330141DF57C4
+                  4BA03ED2D720E405A79E506FD2927D4E52D928108EF0CA1CD6E3341724F066DA
+                  52979CAE2553C0DCF6AE9222E2B4101AC5D9BC0D779C3A640A844FCBE9D7462B
+                  4C1C2FF45E509F3761C1951524FF3AD8D597BEB8C56C5AFBE470E6902A20014F
+                  392C0D093AE1D021550088CAAF9E01C2430E1D520584540D8ECA93F157A60BFC
+                  1195402550095402FF4FC0F67DF5177DCBE9AF61CE19D51EDCEFCB4A3FE0DDF7
+                  15654DBF9808D8554BC408407692EA9621C201BECBFEFCC874D25B5F751A7C37
+                  201C11716927ECFC29A8D83898FC247C5CBE656DD8490B729D33F71E2025C71C
+                  3A10E290436F720BA094E776D8E0F41B53C365DEF9B1808099706666D2699A97
+                  C9E7B8652E6CE27BAD83A67DB124356F84F800D7EB9573D09F00860000000049
+                  454E44AE426082}
+                FileName = 
+                  'C:\Users\User\Desktop\iago\MenuLateralUI\image\iconfinder_notifi' +
+                  'cation-bell-ring-alarm_2203538.png'
+              end>
+            Align = Client
+            Locked = True
+            HitTest = False
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Size.Width = 31.000000000000000000
+            Size.Height = 15.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+        object Label6: TLabel
+          Align = Client
+          StyledSettings = [Family]
+          Locked = True
+          Size.Width = 259.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.FontColor = claWhite
+          Text = 'Notification'
+          TabOrder = 0
+        end
+      end
+      object lay_sub: TLayout
+        Align = Top
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 20.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 185.000000000000000000
+        Size.Width = 300.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        object Circle4: TCircle
+          Align = Left
+          Fill.Kind = None
+          Locked = True
+          HitTest = False
+          Size.Width = 41.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          object Image4: TImage
+            MultiResBitmap.Height = 39
+            MultiResBitmap.Width = 39
+            MultiResBitmap.LoadSize = 2
+            MultiResBitmap = <
+              item
+                Width = 32
+                Height = 32
+                PNG = {
+                  89504E470D0A1A0A0000000D4948445200000020000000200806000000737A7A
+                  F4000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                  01AD494441545847ED97DF51C24010C677EF52403A40A800059F850AB403E9C0
+                  B102A002B502430776A03E03820DF0A703DE4D6EBD0D1B05270C9760C20BBF99
+                  4CEECB1DEC97BDCB268760A97D983B08A31E789ECFBA70A270015A07B30BD547
+                  1BBC0B803DE92A1743F7581B7ECD417B6772A95CC27065334024327614114E45
+                  158246AA83C20791B065208AA0BDBCC43791855019524B6B7815094ACE47E364
+                  20B781EA98025E3F7C54C7D1B35CCECC690A8E6EC0A90E5426E443087591314A
+                  992EA26A719BC8BC18A39EE28E040FA6CB735C89FA21571DE03F520A3AFCC3E4
+                  488233B67DB3D9C763D382A7E13C05F306766CAE062277C26378ACC8BD645A03
+                  FB4C640DCE645E84BB4CE409CEE47A0AFE9AC81B9CC96580494C1C129CC96D80
+                  E1C08704670E32F01F1CDDC05625B4158DABE062AD7E4152EFB32606229DA88C
+                  A8A3D05C89DCC4E7C225ED6D03BB6063F3866E8B74A2360A27A0F456F94EC369
+                  0AB8ECAE3FDFDD88C73A04679C329060331120E16704E9755E03F98474BDF99E
+                  D847260345707A0C156F8FA45D3E7693AAEC6AED8B2C1D52DE20DE9EDB4FEC1E
+                  9AF0B6B44D2A67DDDEF8ACA91EBF01A578C3BB947F348B0000000049454E44AE
+                  426082}
+                FileName = 
+                  'C:\Users\User\Desktop\iago\MenuLateralUI\image\iconfinder_inbox-' +
+                  'download_3671778.png'
+              end>
+            Align = Client
+            Locked = True
+            HitTest = False
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Size.Width = 31.000000000000000000
+            Size.Height = 15.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+        object Label7: TLabel
+          Align = Client
+          StyledSettings = [Family]
+          Locked = True
+          Size.Width = 259.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.FontColor = claWhite
+          Text = 'Subscription'
+          TabOrder = 0
+        end
+      end
+      object lay_message: TLayout
+        Align = Top
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 20.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 150.000000000000000000
+        Size.Width = 300.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 5
+        object Circle5: TCircle
+          Align = Left
+          Fill.Kind = None
+          HitTest = False
+          Size.Width = 41.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          object Image5: TImage
+            MultiResBitmap.Height = 39
+            MultiResBitmap.Width = 39
+            MultiResBitmap.LoadSize = 2
+            MultiResBitmap = <
+              item
+                Width = 32
+                Height = 32
+                PNG = {
+                  89504E470D0A1A0A0000000D4948445200000020000000200806000000737A7A
+                  F4000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                  0198494441545847ED97ED51C2401086773757001D8036200CFCF1975A817400
+                  7680153074A0150815680752809F0DF0D101055C6EDD0DEB0733208743927186
+                  E74FEEBD4C66DFE476F72E503668D78CEA13B709C3A5C9FD83B0C040EF93160E
+                  6D6669A0FACA354AD37BA4A49ECDE64DEA67A97717F3539CA1064FBC7F84C4D5
+                  EC7631A809E71A4421F40B0FAE484C0AD023642EE6B3AF0183EFE0F10BB3E952
+                  20BB9646E906E296403316DDC0541409FBA8E48E3310E0EA67F38841CABB9B30
+                  DC99DC48D4123085131B4621C12B52DE67267FE55005715FC0FB0527F4606A13
+                  150CA1BE6B578D4C42BE9EB4E8C6D446B27D85616A328AB82444ACD870EF4427
+                  2173D025582CD57A300D6D706E27B3872A28DF80ACEDD8C685A3B129308D4C17
+                  0E4A6C9ACB26236958B80979FB5BDDE0B21C9836B12B2606DAF1B2BB79A25D55
+                  624D9B494FE5EA7F81EC62E0A12E27D53E229DDBF40AFA70609899DC0D7DCEC1
+                  DBBC815F2FBA62E093A3671E2242C7E4377F38176C23BE0C7308AEC419C829B8
+                  B2DD408EC195B539A0DBAA1CA97AD223C652A6DBCE01FF19800F39BCB3256DA4
+                  A51D0000000049454E44AE426082}
+                FileName = 
+                  'C:\Users\User\Desktop\iago\MenuLateralUI\image\iconfinder_icons_' +
+                  'Message_1564513.png'
+              end>
+            Align = Client
+            Locked = True
+            HitTest = False
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Size.Width = 31.000000000000000000
+            Size.Height = 15.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+        object Label8: TLabel
+          Align = Client
+          StyledSettings = [Family]
+          Locked = True
+          Size.Width = 259.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.FontColor = claWhite
+          Text = 'Message'
+          TabOrder = 0
+        end
+      end
+      object lay_vacancy: TLayout
+        Align = Top
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 20.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 115.000000000000000000
+        Size.Width = 300.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 6
+        object Circle6: TCircle
+          Align = Left
+          Fill.Kind = None
+          Locked = True
+          HitTest = False
+          Size.Width = 41.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          object Image6: TImage
+            MultiResBitmap.Height = 39
+            MultiResBitmap.Width = 39
+            MultiResBitmap.LoadSize = 2
+            MultiResBitmap = <
+              item
+                Width = 32
+                Height = 32
+                PNG = {
+                  89504E470D0A1A0A0000000D4948445200000020000000200806000000737A7A
+                  F4000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                  0157494441545847ED95DD55C3300C85653B036483844ED0736080B2011BD04E
+                  50980036A11B3042792F3F9D807403FADED84276941CB72EC5E981F280BFA748
+                  AEAD9B54BE12F007146F982B8D6314589E54802B8C38855ADF4096E588E649F2
+                  5A34C50247672FFA81C3286CE1C1ABB9539BBA0210F7B6382F41B4002E3C570A
+                  E614964DF630BCE751217CEC166EF95640F18CE3C16253D9C242C811A70FE28B
+                  A53D579C0E41CCF7F640DB24807A0A2A0BDED6FE77D5B9BAE4B0C38A95C25CC7
+                  0A055DAFB604EC3609A7037C01B17BF6D20AE87B08099819296F8F2EDC6205D8
+                  EEEC7D485DAF8F2EEAD30840E4F0F49080DE3EF0D324014940700BBE72396BAD
+                  ADC3591FA0DF4CDC82C7D6590626EF1762C69183FCA6A4B940038949B7804802
+                  422B269F4725971C75086D869DFF53F3A0942BF7ECE18F61347A498935870D76
+                  FE4B35E428CD02C7EF7D81181F20D22D48029280FF2E00E013D83ACB293D8A47
+                  D00000000049454E44AE426082}
+                FileName = 
+                  'C:\Users\User\Desktop\iago\MenuLateralUI\image\iconfinder_office' +
+                  '_1372378.png'
+              end>
+            Align = Client
+            Locked = True
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Size.Width = 31.000000000000000000
+            Size.Height = 15.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+        object Label9: TLabel
+          Align = Client
+          StyledSettings = [Family]
+          Locked = True
+          Size.Width = 259.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.FontColor = claWhite
+          Text = 'My Vacancy'
+          TabOrder = 0
+        end
+      end
+      object lay_profile: TLayout
+        Align = Top
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 20.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 80.000000000000000000
+        Size.Width = 300.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 7
+        object Circle7: TCircle
+          Align = Left
+          Fill.Kind = None
+          Locked = True
+          HitTest = False
+          Size.Width = 41.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          object Image7: TImage
+            MultiResBitmap.Height = 39
+            MultiResBitmap.Width = 39
+            MultiResBitmap.LoadSize = 2
+            MultiResBitmap = <
+              item
+                Width = 32
+                Height = 32
+                PNG = {
+                  89504E470D0A1A0A0000000D4948445200000020000000200806000000737A7A
+                  F4000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                  0245494441545847C597C1751331108635D286B33BB0FD280012CCE371C2A920
+                  A682840A021524A920A102271D4005F18D0381B88298EDC05778D20C1A797609
+                  F1EE4AEBD8CE77598D9E2C8D4633BF64F5D4807C93E97EA7A13678000E47CA64
+                  3DEE2374530530C53FFA2C7F0BBFC2C044921DE8DE5247139E80D21FA5AB1252
+                  7831DB339FC48C92EC40FFC6DE82362FC56C842382C6ECE7BB3097AE5AB47C1B
+                  E9FF74E7A98B333C96A3256623D108F8D0F70CA99998AD704EEDE7AF61226625
+                  D108684CDB49155AFB448D107500889243FF10403C90662DF11C6871F64B4899
+                  369194849B24EE80B3AD84E53E41A022441D20ADBF4AB33D5E1DA5554BD40144
+                  FD459AAD616996662D5107B88E89F0B398C9F06F52EE8524290EF78073D76DA4
+                  7836C876C56C24A90A58D379C29448F018BE07C48C9222C51D43744C882374E6
+                  837AA6E61AD5A922F7A28C88AF144ED6225FBC029E00C0C4FD86ABD831343AD0
+                  BDA191413B5659D6912EDEE104485F799D9FE66F1659DEFD463DB5A3861AF010
+                  400FC340864B18B2B3BB015C4ACF12B50E841B3072F7A743A7777BD51551E940
+                  FF871BFB9D1C89B9167CE42E67AFFC113E602909C3CED7BC38C373F2DC6296FC
+                  17017FE64746ABB1981BC1A17A9F0FA014B7D281F0F0B0F63AE5067B14D6CEDD
+                  4ED62F9E6BE511F8523BDCF8E28CAF285FC66572FFCB01E7D67EEE7580B3C7AC
+                  2FDC0E0E3CF7F5BE95DD17B0AE5815442C3880107F3AAD9BE2BD581CC1F6765F
+                  40F48E3FC101FF376BF577DF8A007AF9F62C22704FEBB786ACB970E011EFBE95
+                  798A359751EA2FBEA6E082F7DCF79B0000000049454E44AE426082}
+                FileName = 
+                  'C:\Users\User\Desktop\iago\MenuLateralUI\image\iconfinder_User_4' +
+                  '200769.png'
+              end>
+            Align = Client
+            Locked = True
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Size.Width = 31.000000000000000000
+            Size.Height = 15.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+        object Label10: TLabel
+          Align = Client
+          StyledSettings = [Family]
+          Locked = True
+          Size.Width = 259.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.FontColor = claWhite
+          Text = 'My Profile'
+          TabOrder = 0
+        end
+      end
+      object Rectangle1: TRectangle
+        Align = Top
+        Corners = [BottomLeft, BottomRight]
+        Fill.Color = xFF3343BD
+        HitTest = False
+        Sides = [Bottom]
+        Size.Width = 330.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = claGray
+        Stroke.Thickness = 0.200000002980232200
+        object Circle8: TCircle
+          Align = Left
+          Fill.Kind = None
+          Size.Width = 73.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          OnClick = Circle8Click
+          object Image8: TImage
+            MultiResBitmap.Height = 39
+            MultiResBitmap.Width = 39
+            MultiResBitmap.LoadSize = 2
+            MultiResBitmap = <
+              item
+                Width = 32
+                Height = 32
+                PNG = {
+                  89504E470D0A1A0A0000000D4948445200000020000000200806000000737A7A
+                  F4000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                  00F7494441545847ED94410E82301045672031DE42F406C6954B4ECED295F106
+                  0AD73081CA27D504684B674C34C6BE4DC9349DFFD2D25222F1F7B01D67ECCEDD
+                  0D637BE7B239723D14856C2EA6C83B53E1FB7AC8B6437142664737CC45BE32D5
+                  E6640A5B89E615DEF7B025275E8136E3928CA93512A3F0BE0776D14ECDF01E01
+                  70355A3A0EE99AA0009034D4082F0A8098C69A701025004201DA70102D005C41
+                  B426D286039100984A0C456538100B809104508683F043F401BE7E04A21D70FD
+                  84EFBC98E037AE614C8056625140D258231114D03494AEF10A68B71448D67A6F
+                  81361C347BAEA7B7C34ECD085F4345F89391442291F042F4003A466F3C45C117
+                  4D0000000049454E44AE426082}
+                FileName = 
+                  'D:\Projetos Delphi\UI COMUNIDADE\AnimationMenuUI\src\image\iconf' +
+                  'inder_cross_4115230 (1) 1.png'
+              end>
+            Align = Left
+            Locked = True
+            HitTest = False
+            Margins.Left = 8.000000000000000000
+            Margins.Top = 8.000000000000000000
+            Margins.Right = 8.000000000000000000
+            Margins.Bottom = 8.000000000000000000
+            Position.X = 8.000000000000000000
+            Position.Y = 8.000000000000000000
+            Size.Width = 57.000000000000000000
+            Size.Height = 24.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+      end
+    end
+    object AnimaOpacity: TFloatAnimation
+      Duration = 0.400000005960464500
+      PropertyName = 'Opacity'
+      StartValue = 0.000000000000000000
+      StopValue = 1.000000000000000000
+    end
+  end
+end
